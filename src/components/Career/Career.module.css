@@ -1,0 +1,15 @@
+.contact {
+    padding: 80px 20px;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+.heading {
+    margin-bottom: 16px;
+    font-size: 28px;
+}
+
+.email {
+    font-size: 18px;
+    color: #333333;
+}

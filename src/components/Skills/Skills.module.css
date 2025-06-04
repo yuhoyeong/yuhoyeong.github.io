@@ -1,0 +1,124 @@
+.skills {
+    position: relative;
+    padding: 50px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.skills::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('/notebook2.jpg');
+    background-size: cover;
+    background-position: center;
+    filter: blur(10px);
+    opacity: 0.2;
+    z-index: 0;
+}
+
+.skills>* {
+    position: relative;
+    z-index: 1;
+}
+
+.skills.dark {
+    background-color: #1e293b;
+    color: #f1f5f9;
+}
+
+.skills.dark::before {
+    opacity: 0.18;
+    filter: blur(10px) brightness(0.6);
+}
+
+.sectionTitle {
+    font-size: 2.5rem;
+}
+
+.sectionTitle::after {
+    content: '';
+    display: block;
+    width: 80px;
+    height: 3px;
+    background-color: #92CA82;
+    margin: 10px auto;
+    border-radius: 5px;
+    transition: width 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.sectionTitle.dark {
+    color: #f1f5f9;
+}
+
+.sectionTitle.dark::after {
+    background-color: #5bb86a;
+}
+
+.skillsContents {
+    display: flex;
+    max-width: 800px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    column-gap: 20px;
+}
+
+.skill {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex: 1 1 300px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 10px 0;
+    min-width: 300px;
+}
+
+.skill:hover {
+    background-color: #f1f5f9;
+    transform: translateY(-8px) scale(1.03);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+}
+
+.skill.dark {
+    background-color: #23272f;
+    color: #f1f5f9;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.45);
+    border: 1px solid #334155;
+}
+
+.skill.dark h1,
+.skill.dark h2,
+.skill.dark p {
+    color: #f1f5f9;
+}
+
+.icon {
+    font-size: 4em;
+    transition: color 0.3s;
+}
+
+.skill.dark .icon {
+    color: #92CA82;
+}
+
+.skill:hover {
+    transform: translateY(-5px);
+}
+
+.skill.dark:hover {
+    background-color: #263043;
+    transform: translateY(-8px) scale(1.03);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.6);
+}
