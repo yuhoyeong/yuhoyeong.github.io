@@ -4,13 +4,18 @@ export const ThemeContext = createContext(false);
 
 export const ThemeProvider = ({ children }) => {
   const [isDarkMode, setIsDarkMode] = useState(() => {
-    // localStorage에서 초기값 읽기
     const stored = localStorage.getItem("isDarkMode");
     return stored === null ? false : stored === "true";
   });
 
   useEffect(() => {
     localStorage.setItem("isDarkMode", isDarkMode);
+    // body에 다크모드 클래스 토글
+    if (isDarkMode) {
+      document.body.classList.add("dark-mode");
+    } else {
+      document.body.classList.remove("dark-mode");
+    }
   }, [isDarkMode]);
 
   const toggleDarkMode = () => {

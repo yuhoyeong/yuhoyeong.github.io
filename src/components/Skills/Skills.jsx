@@ -24,32 +24,26 @@ function Skills() {
         <div className={`${styles.skill} ${isDarkMode ? styles.dark : ""}`}>
           <FaHtml5 className={styles.icon} />
           <h1>HTML</h1>
-          <p>이것저것합니다.</p>
         </div>
         <div className={`${styles.skill} ${isDarkMode ? styles.dark : ""}`}>
           <FaCss3Alt className={styles.icon} />
           <h2>CSS</h2>
-          <p>이것저것합니다.</p>
         </div>
         <div className={`${styles.skill} ${isDarkMode ? styles.dark : ""}`}>
           <IoLogoJavascript className={styles.icon} />
           <h2>JavaScript</h2>
-          <p>이것저것합니다.</p>
         </div>
         <div className={`${styles.skill} ${isDarkMode ? styles.dark : ""}`}>
           <SiTypescript className={styles.icon} />
-          <h2>Redux</h2>
-          <p>이것저것합니다.</p>
+          <h2>TypeScript</h2>
         </div>
         <div className={`${styles.skill} ${isDarkMode ? styles.dark : ""}`}>
           <FaReact className={styles.icon} />
           <h1>React</h1>
-          <p>이것저것합니다.</p>
         </div>
         <div className={`${styles.skill} ${isDarkMode ? styles.dark : ""}`}>
           <VscGithub className={styles.icon} />
           <h2>VscGithub</h2>
-          <p>이것저것합니다.</p>
         </div>
       </div>
     </section>

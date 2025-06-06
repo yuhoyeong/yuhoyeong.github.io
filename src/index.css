@@ -16,3 +16,12 @@ body {
 html {
   scroll-behavior: smooth;
 }
+
+body.dark-mode {
+  background-color: #1e293b;
+  color: #e2e8f0;
+}
+
+body.dark-mode * {
+  color: #41ec69;
+}
